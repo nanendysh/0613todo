@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>할 일 목록</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>내 할 일</h1>
+      <button id="logout-btn" style="margin-bottom: 1rem; width: 100%; background-color: #f44336;">로그아웃</button>
+
+      <div id="todo-container">
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="새로운 할 일..." required />
+          <button type="submit">추가</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <script type="module" src="./src/todo.js"></script>
+  </body>
+</html>

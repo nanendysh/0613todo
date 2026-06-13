@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>할 일 관리 - 로그인/회원가입</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>할 일 관리 시스템</h1>
+      
+      <div id="login-section">
+        <h2>교사 로그인</h2>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="이메일" required />
+          <input type="password" id="login-password" placeholder="비밀번호" required />
+          <button type="submit">로그인</button>
+        </form>
+      </div>
+
+      <div id="signup-section">
+        <h2>학생 회원가입</h2>
+        <form id="signup-form">
+          <input type="email" id="signup-email" placeholder="이메일" required />
+          <input type="password" id="signup-password" placeholder="비밀번호" required />
+          <button type="submit">회원가입</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./src/auth.js"></script>
+  </body>
+</html>
